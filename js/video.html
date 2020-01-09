@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+            $(document).ready(function(){
+                $("#videoSelect").change(function() {
+                var videoValue = $(this).val();
+
+                if(videoValue==1){
+                    console.log("Inside"+videoValue);
+                    $("#video2").attr('src','video/1.mp4');
+                }
+                else if(videoValue==2){
+                    console.log("Inside"+videoValue);
+                    $("#video2").attr('src','video/2.mp4');
+                }
+                else{
+                    console.log("Inside"+videoValue);
+                    $("#video2").attr('src','video/3.mp4');
+                }
+
+            }); 
+            });
+</script>
+
+
+</head>
+
+<body>
+<tr>
+    <td>
+        <select id="videoSelect">
+          <option value="1">Higher Education in India </option>
+          <option value="2">Sardar Vallabh Bhai Patel</option>
+          <option value="3">Maulana Abul Kalam Azad</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>
+        <video width="100%" height="202px" controls=""> 
+            <source id="video2" src="video/Education In India.mp4" type="video/mp4">                       
+            <object width="260" height="150" type="application/x-mplayer2">
+                <param name="fileName" value="video/movie.swf">
+                <param name="autostart" value="0">
+            </object>
+        </video>
+    </td>
+</tr>
+
+
+</body>
+</html>
