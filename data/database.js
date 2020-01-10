@@ -40,6 +40,3 @@ const data = {
     }
   }
 };
-
-//return "Technology";
-// export default { data };
