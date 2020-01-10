@@ -15,7 +15,7 @@ function Afficher() {
   let info_ = document.getElementById('info');
 
   let ch_ = `ressources/${Niv_.value}_${Mat_.value}_${Les_.value}.pdf`;
-  let kk = `<iframe src = "./ViewerJS/#../${ch_}" width='100%' height='100%' allowfullscreen webkitallowfullscreen></iframe>`;
+  let kk = `<iframe src = "./ViewerJS/#../${ch_}" width='100%' height='120%' scrolling="auto" allowfullscreen webkitallowfullscreen></iframe>`;
   // let kk = `<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="${ch_}" frameborder="1" scrolling="auto" allowfullscreen height="140%" width="100%" ></iframe>`;
   document.getElementById('pdf_view').innerHTML = kk;
 }
