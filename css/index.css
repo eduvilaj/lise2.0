@@ -74,8 +74,10 @@ div#my-video {
 }
 
 .button {
-  width: 260px;
+  /* width: 260px; */
+  width: 240px;
   height: 245px;
+  margin-left: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
@@ -103,7 +105,7 @@ div#my-video {
   font-size: 16px;
   cursor: pointer;
 }
-/* Darker background on mouse-over */
+
 .btn:hover {
   background-color: #337ab7;
 }
@@ -182,6 +184,6 @@ li.list-group-item:hover {
   .phone-css {
     margin-bottom: 10px;
   }
-  .mc {
-  }
+   .mc {
+  } 
 } */
