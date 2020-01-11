@@ -31,7 +31,7 @@ function VoirVideo() {
   let Mat_ = document.getElementById('Matiere');
   let Les_ = document.getElementById('Lesson');
 
-  let ch = `ressources/videos/${Niv_.value}_${Mat_.value}_${Les_.value}.mp4`;
+  let ch = `./ressources/videos/${Niv_.value}_${Mat_.value}_${Les_.value}.mp4`;
   let kk = `<iframe src="${ch}" frameborder="1" frameborder="1" height="90%" width="94%" allowfullscreen></iframe>`;
   document.getElementById('playvideo').innerHTML = kk;
 }
