@@ -60,7 +60,8 @@ function afficherLesson(lesson, i) {
   document.getElementById('info').innerHTML = '';
   let m = `<p class="tit_kesyon">Q${lesson.No_Question} - ${lesson.Question}</p>`;
   let aaa = '  ';
-  let gg = "<ul class='list-group'> ";
+  let gg =
+    "<ul class='list-group' style='display:flex; flex-direction:column;'> ";
   lesson.reponses.map(r => {
     gg += `<li class="list-group-item"  onclick="verifier_reponse('${lesson.Vrai_reponse}','${r.Lettre}');">${r.Lettre} -) ${r.possible_reponse} </li>`;
   });
