@@ -58,7 +58,7 @@ function verifier_reponse(vrai_reponse_, reponse_eleve_) {
 /** #######################    Afficher  Leçon  ################ */
 function afficherLesson(lesson, i) {
   document.getElementById('info').innerHTML = '';
-  let m = `<p style='font-weight:bold'>Q${lesson.No_Question} - ${lesson.Question}</p>`;
+  let m = `<p class="tit_kesyon">Q${lesson.No_Question} - ${lesson.Question}</p>`;
   let aaa = '  ';
   let gg = "<ul class='list-group'> ";
   lesson.reponses.map(r => {
@@ -67,10 +67,10 @@ function afficherLesson(lesson, i) {
   gg += `</ul>`;
   m += gg;
 
-  let b = `<p /><p /><p style="display:flex; justify-content:center"><button class='btn btn-warning btn-sm' " onclick="suivant(${lesson.No_Question -
+  let b = `<p /><p /><p style="display:flex; justify-content:center"><button class='btn btn-warning btn-sm gg' " onclick="suivant(${lesson.No_Question -
     1});" ${
     i - 1 <= 0 ? 'disabled' : ''
-  } > ${' < '} </button>&nbsp;&nbsp;<button class='btn btn-warning btn-sm'  onclick="suivant(${lesson.No_Question +
+  } > ${' < '} </button><button class='btn btn-warning btn-sm gg'  onclick="suivant(${lesson.No_Question +
     1});" ${i >= nb_kesyon ? 'disabled' : ''}> ${' > '} </button> </p>`;
 
   m += b;

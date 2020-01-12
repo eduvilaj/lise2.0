@@ -180,10 +180,45 @@ li.list-group-item:hover {
   border-top-right-radius: 20px;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .phone-css {
-    margin-bottom: 10px;
+.btn.btn-warning.btn-sm.gg {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  /* height: 4vh; */
+  /* width: 4vw;  */
+}
+
+.tit_kesyon {
+  margin-top: '40px';
+  font-weight: bolder;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .col-sm-3 .form-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
   }
-   .mc {
-  } 
-} */
+  .col-sm-3 .form-group label {
+    display: none;
+  }
+  .col-sm-3 .form-group button {
+    margin-left: 10px;
+    height: 48px;
+    width: 48px;
+    font-weight: bolder;
+  }
+
+  /* .btn.btn-warning.btn-sm.gg button {
+    width: 48px;
+  } */
+}
