@@ -194,16 +194,29 @@ li.list-group-item:hover {
 
 .tit_kesyon {
   margin-top: '40px';
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-style: italic;
   font-weight: bolder;
   display: flex;
   justify-items: center;
   align-items: center;
 }
+
+.divider {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+
 @media only screen and (max-width: 768px) {
   .col-sm-3 .form-group {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    /* width: 90%; */
+    margin-top: 20px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -212,7 +225,8 @@ li.list-group-item:hover {
     display: none;
   }
   .col-sm-3 .form-group button {
-    margin-left: 10px;
+    display: block;
+    margin-left: 12px;
     height: 48px;
     width: 48px;
     font-weight: bolder;
