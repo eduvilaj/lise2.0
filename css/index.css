@@ -203,6 +203,15 @@ li.list-group-item:hover {
   align-items: center;
 }
 
+#info {
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  /* margin-top: 20px; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-items: center; */
+}
 .divider {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -226,7 +235,7 @@ li.list-group-item:hover {
   }
   .col-sm-3 .form-group button {
     display: block;
-    margin-left: 12px;
+    margin-left: 10px;
     height: 48px;
     width: 48px;
     font-weight: bolder;
