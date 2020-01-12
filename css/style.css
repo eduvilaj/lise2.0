@@ -1705,4 +1705,9 @@ i.icon-white {
 	#contact-form input[type=submit] {
 		width: 100%;
 	}
-}
+
+	.navbar-inverse {
+		background-color: #337ab7;
+		border-color: #2e6da4;
+	  }
+
