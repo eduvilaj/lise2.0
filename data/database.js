@@ -6,7 +6,7 @@ const data = {
         {
           No_Question: 1,
           Question:
-            '. Un problème économique auquel est confronté tout individu vient du fait que : ?',
+            '. Un problème économique auquel est confronté tout individu vient du fait que :',
           Vrai_reponse: 'C',
           reponses: [
             {
@@ -33,7 +33,7 @@ const data = {
         },
         {
           No_Question: 2,
-          Question: 'Un bien est devenu rare quand :?',
+          Question: 'Un bien est devenu rare quand :',
           Vrai_reponse: 'D',
           reponses: [
             {
@@ -60,7 +60,7 @@ const data = {
         {
           No_Question: 3,
           Question:
-            'Il existe en quantité limité et permet la satisfaction d’un besoin économique?',
+            'Le service de base des soins de santé est un exemple de situation de rareté à laquelle font face presque tous les jours :',
           Vrai_reponse: 'B',
           reponses: [
             { Lettre: 'A', possible_reponse: 'Les Cubains' },
@@ -72,7 +72,7 @@ const data = {
         {
           No_Question: 4,
           Question:
-            'Les produits qui ont fait objet de rareté en Haïti au début du mois de septembre 2019 sont : ?',
+            'Les produits qui ont fait objet de rareté en Haïti au début du mois de septembre 2019 sont :',
           Vrai_reponse: 'C',
           reponses: [
             { Lettre: 'A', possible_reponse: 'Le riz et ses dérivés' },
@@ -84,7 +84,7 @@ const data = {
         },
         {
           No_Question: 5,
-          Question: 'Nos besoins et nos désirs sont illimités parce que :?',
+          Question: 'Nos besoins et nos désirs sont illimités parce que :',
           Vrai_reponse: 'B',
           reponses: [
             { Lettre: 'A', possible_reponse: 'Les ressources sont limitées' },
@@ -133,7 +133,7 @@ const data = {
         },
         {
           No_Question: 8,
-          Question: 'Les besoins sociaux d’une personne ont pris naissance :?',
+          Question: 'Les besoins sociaux d’une personne ont pris naissance :',
           Vrai_reponse: 'A',
           reponses: [
             {
@@ -154,8 +154,7 @@ const data = {
         },
         {
           No_Question: 9,
-          Question:
-            'Pour comprendre l’activité économique il faut la relier :?',
+          Question: 'Pour comprendre l’activité économique il faut la relier :',
           Vrai_reponse: 'C',
           reponses: [
             { Lettre: 'A', possible_reponse: 'Aux manques' },
@@ -170,7 +169,7 @@ const data = {
         },
         {
           No_Question: 10,
-          Question: 'Faire du Sport est un besoin :?',
+          Question: 'Faire du Sport est un besoin :',
           Vrai_reponse: 'B',
           reponses: [
             { Lettre: 'A', possible_reponse: 'Physiologique' },
