@@ -1,5 +1,7 @@
 document.querySelector('#pdf_view').style.display = 'none';
 document.querySelector('#playvideo').style.display = 'none';
+
+var konbyen_bon = 0;
 //document.getElementById('.info').innerHTML = '';
 
 /** #######################    Afficher  un document pdf   ################ */
@@ -39,19 +41,59 @@ function VoirVideo() {
 let nb_kesyon = 0;
 let no_leson = 0;
 let kesyon_yo = [];
+let kesyon_pabon_yo = [];
 
 /** #######################    suivant   ################ */
 
 function suivant(i) {
-  afficherLesson(kesyon_yo[i - 1], i);
-  console.log(kesyon_yo);
-}
-/** #######################    verifier reponse eleve   ################ */
-function verifier_reponse(vrai_reponse_, reponse_eleve_) {
-  if (reponse_eleve_ === vrai_reponse_) {
-    alert('Bravo !!!!');
+  console.log('=======> ' + i);
+  console.log('=======> ' + kesyon_yo.length);
+  if (i <= kesyon_yo.length) {
+    afficherLesson(kesyon_yo[i - 1], i);
   } else {
-    alert('Mauvaise Reponse');
+    let mesaj = `${konbyen_bon} bonne reponses sur ${kesyon_yo.length} <br/> Voici les mauvaises reponses  <br/>`;
+    let kk = '';
+    kesyon_pabon_yo.map(k => {
+      kk += `${k.Kesyon}  <br/> ${k.repons} <hr />`;
+    });
+    mesaj += kk;
+    // appel a la methode
+    afficherMauvaisesReponses(mesaj);
+    //alert(mesaj);
+  }
+  //console.log(kesyon_yo);
+}
+
+/** #######################  Afficher les mauvaises reponses ############## */
+/** #######################    Afficher  Leçon  ################ */
+function afficherMauvaisesReponses(mesaj) {
+  document.getElementById('info').innerHTML = '';
+  document.getElementById('info').innerHTML = mesaj;
+}
+
+/** #######################    verifier reponse eleve   ################ */
+function verifier_reponse(
+  kesyon,
+  no_kesyon,
+  posib_repons,
+  vrai_reponse_,
+  reponse_eleve_
+) {
+  if (reponse_eleve_ === vrai_reponse_) {
+    konbyen_bon++;
+    // alert('Bravo !!!!');
+  } else {
+    //alert('Mauvaise Reponse');
+    let repons_babon = {
+      Kesyon: kesyon,
+      repons: posib_repons
+    };
+    kesyon_pabon_yo.push(repons_babon);
+  }
+  console.log(no_kesyon, nb_kesyon);
+  if (Number(no_kesyon) <= Number(nb_kesyon)) {
+    // console.log(`Il y a suivant ${Number(no_kesyon) + 1}`);
+    suivant(Number(no_kesyon) + 1);
   }
 }
 
@@ -63,7 +105,7 @@ function afficherLesson(lesson, i) {
   let gg =
     "<ul class='list-group' style='display:flex; flex-direction:column;'> ";
   lesson.reponses.map(r => {
-    gg += `<li class="list-group-item"  onclick="verifier_reponse('${lesson.Vrai_reponse}','${r.Lettre}');">${r.Lettre} -) ${r.possible_reponse} </li>`;
+    gg += `<li class="list-group-item"  onclick="verifier_reponse('${lesson.Question}','${lesson.No_Question}','${r.possible_reponse}','${lesson.Vrai_reponse}','${r.Lettre}');">${r.Lettre} -) ${r.possible_reponse} </li>`;
   });
   gg += `</ul>`;
   m += gg;
@@ -88,7 +130,8 @@ async function LireJson() {
   let konbyenKesyon = data.lise2_0.Ns1.L1.length;
   nb_kesyon = konbyenKesyon;
   no_leson = 0;
+  kesyon_pabon_yo = [];
   kesyon_yo = data.lise2_0.Ns1.L1;
-
+  konbyen_bon = 0;
   afficherLesson(data.lise2_0.Ns1.L1[no_leson]);
 }
