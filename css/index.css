@@ -74,10 +74,8 @@ div#my-video {
 }
 
 .button {
-  /* width: 260px; */
-  width: 240px;
+  width: 260px;
   height: 245px;
-  margin-left: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
@@ -105,7 +103,7 @@ div#my-video {
   font-size: 16px;
   cursor: pointer;
 }
-
+/* Darker background on mouse-over */
 .btn:hover {
   background-color: #337ab7;
 }
@@ -180,68 +178,10 @@ li.list-group-item:hover {
   border-top-right-radius: 20px;
 }
 
-.btn.btn-warning.btn-sm.gg {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  height: 48px;
-  width: 48px;
-  /* height: 4vh; */
-  /* width: 4vw;  */
-}
-
-.tit_kesyon {
-  margin-top: '40px';
-  margin-bottom: 15px;
-  padding-left: 10px;
-  font-style: italic;
-  font-weight: bolder;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-#info {
-  display: flex;
-  flex-direction: column;
-  /* width: 90%; */
-  /* margin-top: 20px; */
-  /* justify-content: center; */
-  /* justify-items: center; */
-  /* align-items: center; */
-}
-.divider {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  height: 1px;
-  width: 100%;
-  border-top: 1px solid lightgray;
-}
-
 @media only screen and (max-width: 768px) {
-  .col-sm-3 .form-group {
-    display: flex;
-    flex-direction: row;
-    /* width: 90%; */
-    margin-top: 20px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+  .phone-css {
+    margin-bottom: 10px;
   }
-  .col-sm-3 .form-group label {
-    display: none;
+  .mc {
   }
-  .col-sm-3 .form-group button {
-    display: block;
-    margin-left: 10px;
-    height: 48px;
-    width: 48px;
-    font-weight: bolder;
-  }
-
-  /* .btn.btn-warning.btn-sm.gg button {
-    width: 48px;
-  } */
 }
