@@ -46,16 +46,17 @@ let kesyon_pabon_yo = [];
 /** #######################    suivant   ################ */
 
 function suivant(i) {
-  console.log('=======> ' + i);
-  console.log('=======> ' + kesyon_yo.length);
+  //console.log('=======> ' + i);
+  //console.log('=======> ' + kesyon_yo.length);
   if (i <= kesyon_yo.length) {
     afficherLesson(kesyon_yo[i - 1], i);
   } else {
-    let mesaj = `${konbyen_bon} bonne reponses sur ${kesyon_yo.length} <br/> Voici les mauvaises reponses  <br/>`;
+    let mesaj = `<p class="container_"><p class="konbyen_bon_reponse">${konbyen_bon} bonne(s) reponse(s) sur ${kesyon_yo.length}</p> <p class="voici">Voici les mauvaises reponses  </p>`;
     let kk = '';
     kesyon_pabon_yo.map(k => {
-      kk += `${k.Kesyon}  <br/> ${k.repons} <hr />`;
+      kk += `<p class="kesyon_">${k.Kesyon}</p>  <p class="repons_"> ${k.repons} <p/><hr/>`;
     });
+	kk +="</p>"
     mesaj += kk;
     // appel a la methode
     afficherMauvaisesReponses(mesaj);

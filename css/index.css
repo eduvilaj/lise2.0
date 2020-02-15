@@ -5,7 +5,28 @@
 #bl {
   background-color: #fff;
 }
+.konbyen_bon_reponse{
+text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+	color:#063;
+   
+}
 
+.voici{
+	margin-bottom:10px;
+	font-size:3rem;
+	margin-left:8px;
+	}
+.kesyon_{
+   margin-left: 3rem;
+    font-weight: bold;
+}
+
+.repons_{
+  margin-left: 4rem;
+    color: red;
+}
 #playvideo {
   margin: auto;
   height: 100%;
@@ -110,7 +131,7 @@ div#my-video {
 
 .gg {
   display: block;
-  height: 600px;
+  height: 40px;
 }
 /*body {position: relative;
 height:100%;
