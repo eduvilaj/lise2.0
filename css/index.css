@@ -6,26 +6,33 @@
   background-color: #fff;
 }
 .konbyen_bon_reponse{
-text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-	color:#063;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #009933; 
    
 }
 
+
 .voici{
-	margin-bottom:10px;
-	font-size:2.4rem;
-	margin-left:8px;
+	margin-bottom: 10px;
+    font-size: 2rem;
+    margin-left: 8px;
+    font-weight: bolder;
 	}
 .kesyon_{
    margin-left: 2.4rem;
-    font-weight: bold;
+    
+}
+.tit_kesyon{
+  font-weight: bold;
 }
 
 .repons_{
-  margin-left: 4rem;
+     margin-left: 4rem;
     color: red;
+    font-style: italic;
 }
 #playvideo {
   margin: auto;
@@ -128,10 +135,13 @@ div#my-video {
 .btn:hover {
   background-color: #337ab7;
 }
-
+.z {
+ display: block;
+  height:auto;
+}
 .gg {
   display: block;
-  height: 40px;
+  height: 740px;
 }
 /*body {position: relative;
 height:100%;

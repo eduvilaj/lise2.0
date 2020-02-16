@@ -51,7 +51,7 @@ function suivant(i) {
   if (i <= kesyon_yo.length) {
     afficherLesson(kesyon_yo[i - 1], i);
   } else {
-    let mesaj = `<p class="container_"><p class="konbyen_bon_reponse">${konbyen_bon} bonne(s) reponse(s) sur ${kesyon_yo.length}</p> <p class="voici">Voici les mauvaises reponses  </p>`;
+    let mesaj = `<p class="container_"><p class="konbyen_bon_reponse">${konbyen_bon} bonne(s) reponse(s) sur ${kesyon_yo.length}</p> <hr/><p class="voici">Voici les mauvaises reponses  </p>`;
     let kk = '';
     kesyon_pabon_yo.map(k => {
       kk += `<p class="kesyon_">${k.Kesyon}</p>  <p class="repons_"> ${k.repons} <p/><hr/>`;
@@ -111,10 +111,11 @@ function afficherLesson(lesson, i) {
   gg += `</ul>`;
   m += gg;
 
-  let b = `<p /><p /><p style="display:flex; justify-content:center"><button class='btn btn-warning btn-sm gg' " onclick="suivant(${lesson.No_Question -
+  let b = `<p /><p />
+  <p style="display:flex; justify-content:center"><button class='btn btn-warning btn-sm z' " onclick="suivant(${lesson.No_Question -
     1});" ${
     i - 1 <= 0 ? 'disabled' : ''
-  } > ${' < '} </button><button class='btn btn-warning btn-sm gg'  onclick="suivant(${lesson.No_Question +
+  } > ${' < '} </button><button class='btn btn-warning btn-sm z'  onclick="suivant(${lesson.No_Question +
     1});" ${i >= nb_kesyon ? 'disabled' : ''}> ${' > '} </button> </p>`;
 
   m += b;
