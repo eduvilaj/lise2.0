@@ -6,7 +6,7 @@ const data = {
         {
           No_Question: 1,
           Question:
-            '. Un problème économique auquel est confronté tout individu vient du fait que :',
+            'Un problème économique auquel est confronté tout individu vient du fait que :',
           Vrai_reponse: 'C',
           reponses: [
             {
