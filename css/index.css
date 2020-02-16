@@ -30,7 +30,7 @@
 }
 
 .repons_{
-     margin-left: 4rem;
+     margin-left: 3.5rem;
     color: red;
     font-style: italic;
 }
@@ -88,6 +88,7 @@ div#my-video {
   box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.4);
 }
 #shadow4 {
+  padding-left: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 #shadow5 {
