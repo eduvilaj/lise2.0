@@ -51,10 +51,10 @@ function suivant(i) {
   if (i <= kesyon_yo.length) {
     afficherLesson(kesyon_yo[i - 1], i);
   } else {
-    let mesaj = `<p class="container_"><p class="konbyen_bon_reponse">${konbyen_bon} bonne(s) reponse(s) sur ${kesyon_yo.length}</p> <hr/><p class="voici">Voici les mauvaises reponses  </p>`;
+    let mesaj = `<p class="container_"><p class="konbyen_bon_reponse" id="shadow4">${konbyen_bon} bonne(s) reponse(s) sur ${kesyon_yo.length}</p> <hr/><p class="voici">Voici les mauvaises reponses  </p>`;
     let kk = '';
     kesyon_pabon_yo.map(k => {
-      kk += `<p class="kesyon_">${k.Kesyon}</p>  <p class="repons_"> ${k.repons} <p/><hr/>`;
+      kk += `<p class="kesyon_" id="shadow4">${k.Kesyon}</p>  <p class="repons_"> ${k.repons} <p/><hr/>`;
     });
 	kk +="</p>"
     mesaj += kk;
