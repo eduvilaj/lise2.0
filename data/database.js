@@ -175,8 +175,263 @@ const data = {
             { Lettre: 'A', possible_reponse: 'Physiologique' },
             { Lettre: 'B', possible_reponse: 'Social' }
           ]
-        }
+		  
+		   },
+        {
+          No_Question: 11,
+          Question: ' L’univers des besoins est essentiellement : ',
+          Vrai_reponse: 'E',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Politique '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Économique '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Social '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'Culturel '
+            },{
+              Lettre: 'E',
+              possible_reponse:
+                'Social et culturel  '
+            }
+          ]},
+        {
+          No_Question: 12,
+          Question: ' Le coût d’opportunité d’un bien est : ',
+          Vrai_reponse: 'D',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Le bénéfice tiré dans une action posée (revente du bien par exemple) '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'La somme des dépenses effectuées pour avoir ce bien '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'La valeur économique de ce bien d. Ce à quoi on renonce pour obtenir le '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'Ce à quoi on renonce pour obtenir le bien désiré '
+            }
+	
       ]
+	  },
+        {
+          No_Question: 13,
+          Question: 'Tout besoin n’est pas nécessairement économique :',
+          Vrai_reponse: 'A',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Vrai '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Faux '
+           
+            }  
+			
+		 ]
+	  },
+        {
+          No_Question: 14,
+          Question: ' Les agents économiques réfléchissent en termes de : ',
+          Vrai_reponse: 'C',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Profits à réaliser dans une transaction financière '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Risques à minimiser '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Coûts d’opportunité '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'Projection sur le coût de la vie '	
+			
+			
+			
+			
+			
+			},
+			
+		 ]
+	  },
+        {
+          No_Question: 15,
+          Question: ' Ta Maman a laissé son travail pour poursuivre des études de Master à l’étranger. Quel élément parmi ceux proposés ci-dessous représente un coût d’opportunité de ce choix. :',
+          Vrai_reponse: 'C',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Un poste de Manager d’une ONG après sa graduation comme Maitre. '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Une promotion dans son travail avec une augmentation de 50% de son salaire '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Il permet la production d’autres biens'
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'L’enrichissement intellectuel '
+			},
+			 ]
+	  },
+        {
+          No_Question: 16,
+          Question: ' Une marchandise ou un service produit à l’aide d’une combinaison de différentes ressources existant en quantité limitée est : ',
+          Vrai_reponse: 'D',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Un bien '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Un bien libre '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Une ressource rare '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'Un bien économique '
+			},
+			 ]
+	  },
+        {
+          No_Question: 17,
+          Question: ' L’eau est un bien libre : ',
+          Vrai_reponse: 'C',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'En Haïti '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'En France '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Dans certaines régions d’Haïti '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'A New-york'
+				},
+			 ]
+	  },
+        {
+          No_Question: 18,
+          Question: 'Lequel parmi les agents économiques résidents entretiennent des relations avec des agents économiques non-résidents :',
+          Vrai_reponse: 'A',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Brasserie Nationale d’Haïti (BRANA)'
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Rhum Barbancourt '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Les Allumettes Haïtiennes S.A (LAHSA) '
+            },
+            
+			
+		 ]
+	  },
+        {
+          No_Question: 19,
+          Question: ' Les Obligations BRH sont : ',
+          Vrai_reponse: 'C',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Une nouvelle mesure de la BRH pour stabiliser le taux de change du dollar par rapport à la gourde '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Un nouveau service de la Banque au grand public '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Un nouveau produit financier offert au grand public par l’intermédiaire des Banques commerciales et certaines Sociétés. '
+            },
+           
+			 ]
+	  },
+        {
+          No_Question: 20,
+          Question: ' La production des entreprises est destinée : ',
+          Vrai_reponse: 'B',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Aux banques commerciales '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'Aux ménages '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'Aux agents distributeurs de produits '
+            },
+            
+	 ] 
+	
+	 }
+		  
+       ]
     }
   }
 };
