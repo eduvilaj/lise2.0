@@ -1,7 +1,7 @@
 const data = {
   lise2_0: {
     Ns1: {
-      pwogram: 'Mathematiques',
+      pwogram: 'Eco',
       L1: [
         {
           No_Question: 1,
