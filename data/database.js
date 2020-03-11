@@ -205,36 +205,10 @@ const data = {
               possible_reponse:
                 'Social et culturel  '
             }
-          ]},
-        {
+          ]
+		  }, 
+		  {
           No_Question: 12,
-          Question: ' Le coût d’opportunité d’un bien est : ',
-          Vrai_reponse: 'D',
-          reponses: [
-            {
-              Lettre: 'A',
-              possible_reponse:
-                'Le bénéfice tiré dans une action posée (revente du bien par exemple) '
-            },
-            {
-              Lettre: 'B',
-              possible_reponse:
-                'La somme des dépenses effectuées pour avoir ce bien '
-            },
-            {
-              Lettre: 'C',
-              possible_reponse: 'La valeur économique de ce bien d. Ce à quoi on renonce pour obtenir le '
-            },
-            {
-              Lettre: 'D',
-              possible_reponse:
-                'Ce à quoi on renonce pour obtenir le bien désiré '
-            }
-	
-      ]
-	  },
-        {
-          No_Question: 13,
           Question: 'Tout besoin n’est pas nécessairement économique :',
           Vrai_reponse: 'A',
           reponses: [
@@ -252,6 +226,34 @@ const data = {
 			
 		 ]
 	  },
+        {
+          No_Question: 13,
+          Question: ' Le coût d’opportunité d’un bien est : ',
+          Vrai_reponse: 'D',
+          reponses: [
+            {
+              Lettre: 'A',
+              possible_reponse:
+                'Le bénéfice tiré dans une action posée (revente du bien par exemple) '
+            },
+            {
+              Lettre: 'B',
+              possible_reponse:
+                'La somme des dépenses effectuées pour avoir ce bien '
+            },
+            {
+              Lettre: 'C',
+              possible_reponse: 'La valeur économique de ce bien  '
+            },
+            {
+              Lettre: 'D',
+              possible_reponse:
+                'd. Ce à quoi on renonce pour obtenir leCe à quoi on renonce pour obtenir le bien désiré '
+            }
+	
+      ]
+	  },
+        
         {
           No_Question: 14,
           Question: ' Les agents économiques réfléchissent en termes de : ',
@@ -301,7 +303,7 @@ const data = {
             },
             {
               Lettre: 'C',
-              possible_reponse: 'Il permet la production d’autres biens'
+              possible_reponse: 'Le temps passé hors de la vie active professionnelle la privant ainsi de salaires '
             },
             {
               Lettre: 'D',
