@@ -248,7 +248,7 @@ const data = {
             {
               Lettre: 'D',
               possible_reponse:
-                'd. Ce à quoi on renonce pour obtenir leCe à quoi on renonce pour obtenir le bien désiré '
+                'd. Ce à quoi on renonce pour obtenir le bien désiré    '
             }
 	
       ]
